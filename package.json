@@ -1,0 +1,45 @@
+{
+  "name": "vite-plugin-generate-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "根据api文件夹自动生成api的ts类型",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "source": "./src/index.ts",
+  "scripts": {
+    "build": "vite build && tsc",
+    "test": "vite build -c test/vite.config.ts"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "plugin"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.0",
+    "@types/node": "^17.0.23"
+  },
+  "peerDependencies": {
+    "vite": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qhl123456/vite-plugin-generate-api.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "author": "CC",
+  "license": "MIT"
+}
